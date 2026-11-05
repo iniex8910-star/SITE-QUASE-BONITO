@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -11,25 +11,39 @@
 <body>
     <div class="container_login">
         <h2>Log-in</h2>
-        <form class="login_form" id="login_form" action="">
+        <form class="login_form" id="login_form">
             <div class="div_info">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome_fild" name="nome" placeholder="Digite seu nome aqui...">
+                <label for="nome_fild">Nome:</label>
+                <input type="text" id="nome_fild" name="nome" placeholder="Digite seu nome aqui..." required>
             </div>
             <div class="div_info">
-                <label for="email">Email:</label>
-                <input type="email" id="email_fild" name="email" placeholder="Digite seu email aqui...">
+                <label for="email_fild">Email:</label>
+                <input type="email" id="email_fild" name="email" placeholder="Digite seu email aqui..." required>
             </div>
             <div class="div_info">
-                <label for="email">Senha:</label>
-                <input type="senha" id="senha_fild" name="senha" placeholder="Digite sua senha aqui...">
+                <label for="senha_fild">Senha:</label>
+                <input type="password" id="senha_fild" name="senha" placeholder="Digite sua senha aqui..." required>
             </div>
            
-            <button id="btn_submit" type="submit" onclick="window.location.href='../index.html'">Entrar</button>
+            <button id="btn_submit" type="submit">Entrar</button>
            
         </form>
-        <a href="/">Crie uma conta</a>
+        <a href="cadastro.html">Crie uma conta</a>
     </div>
+    <script>
+        const loginForm = document.getElementById('login_form');
+
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            if (!loginForm.checkValidity()) {
+                loginForm.reportValidity();
+                return;
+            }
+
+            window.location.href = '../index.html';
+        });
+    </script>
 </body>
 
 </html>

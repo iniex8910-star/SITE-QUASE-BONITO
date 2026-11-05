@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.marca h1,
+.marca p {
+    margin: 0;
+}
+
+.pesquisa {
+    display: flex;
+    flex: 1;
+    max-width: 450px;
+}
+
+.pesquisa input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.pesquisa button {
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.acoes-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.carrinho-header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+
+.carrinho-header svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: #333;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.login {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: #333;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+nav a {
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+}
+
+.imagem-produto {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    background-color: #e5e5e5;
+    object-fit: cover;
+}
+
+.preco {
+    font-weight: bold;
+}
+
+.botao-carrinho {
+    padding: 8px;
+    background-color: #333;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 12px;
+    }
+
+    .cards {
+        gap: 10px;
+        
+    }
+
+    .card {
+        width: 150px;
+        padding: 10px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .marca {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .pesquisa {
+        order: 1;
+        max-width: none;
+        flex-basis: 100%;
+    }
+
+    .acoes-header {
+        margin-left: auto;
+    }
+}

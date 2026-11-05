@@ -1,11 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-bar</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>E-Bar Bebidas</title>
 </head>
 <body>
-    
+    <header>
+        <div class="marca">
+            <h1>E-Bar Bebidas</h1>
+            <p>Bebidas para deixar seu dia melhor</p>
+        </div>
+        <form class="pesquisa" action="#" method="get" role="search">
+            <input type="search" name="busca" placeholder="Pesquisar bebidas..." aria-label="Pesquisar bebidas">
+            <button type="submit">Buscar</button>
+        </form>
+        <div class="acoes-header">
+            <button class="carrinho-header" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 4h2l2.2 11h10.9l2-8H6"></path>
+                    <circle cx="9" cy="19" r="1"></circle>
+                    <circle cx="17" cy="19" r="1"></circle>
+                </svg>
+                Carrinho
+            </button>
+            <a class="login" href="pages/login.html" aria-label="Entrar na sua conta">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="categoria" id="refrigerantes">
+            <h2>Refrigerantes</h2>
+            <div class="cards">
+                <article class="card">
+                    <img class="imagem-produto"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aG8r8bG-9Ch4--OyWuEMsylim6zKgIGi9x7AABjucg&s=10" alt="coca cola">
+                    <h3>Refrigerante Coca cola</h3>
+                    <p>Garrafa 2 litros</p>
+                    <p class="preco">R$ 10,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpHZvo5zEQMRXv9-RF8qJhnfTo5aX7Br0v9L0zCMO3Pw&s=10" alt="Ilustração de uma garrafa de refrigerante">
+                    <h3>Guaraná</h3>
+                    <p>Garrafa 2 litros</p>
+                    <p class="preco">R$ 9,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFV8Y8fDjqzhM0o1Sg8yk8HdkK_zO4_VPJ30XnV8ZA8A&s=10" alt="Ilustração de uma garrafa de refrigerante">
+                    <h3>Refrigerante Fanta</h3>
+                    <p>Garrafa 2 litros</p>
+                    <p class="preco">R$ 9,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="categoria" id="sem-alcool">
+            <h2>Bebidas sem álcool</h2>
+            <div class="cards">
+                <article class="card">
+                    <img class="imagem-produto" src="images/sem-alcool.svg" alt="Ilustração de bebida sem álcool">
+                    <h3>Suco de Laranja</h3>
+                    <p>Garrafa 1 litro</p>
+                    <p class="preco">R$ 7,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="images/sem-alcool.svg" alt="Ilustração de bebida sem álcool">
+                    <h3>Água Mineral</h3>
+                    <p>Garrafa 500 ml</p>
+                    <p class="preco">R$ 3,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="images/sem-alcool.svg" alt="Ilustração de bebida sem álcool">
+                    <h3>Chá Gelado</h3>
+                    <p>Garrafa 1 litro</p>
+                    <p class="preco">R$ 6,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="images/sem-alcool.svg" alt="Ilustração de bebida sem álcool">
+                    <h3>Água de Coco</h3>
+                    <p>Caixa 1 litro</p>
+                    <p class="preco">R$ 8,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="categoria" id="com-alcool">
+            <h2>Bebidas com álcool</h2>
+            <div class="cards">
+                <article class="card">
+                    <img class="imagem-produto" src="images/com-alcool.svg" alt="Ilustração de bebida alcoólica">
+                    <h3>Cerveja</h3>
+                    <p>Long neck 330 ml</p>
+                    <p class="preco">R$ 8,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="images/com-alcool.svg" alt="Ilustração de bebida alcoólica">
+                    <h3>Vinho Tinto</h3>
+                    <p>Garrafa 750 ml</p>
+                    <p class="preco">R$ 32,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="images/com-alcool.svg" alt="Ilustração de bebida alcoólica">
+                    <h3>Gin</h3>
+                    <p>Garrafa 750 ml</p>
+                    <p class="preco">R$ 45,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="images/com-alcool.svg" alt="Ilustração de bebida alcoólica">
+                    <h3>Vodca</h3>
+                    <p>Garrafa 1 litro</p>
+                    <p class="preco">R$ 38,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="categoria" id="uisques">
+            <h2>Uísques</h2>
+            <div class="cards">
+                <article class="card">
+                    <img class="imagem-produto" src="images/uisque.svg" alt="Ilustração de uma garrafa de uísque">
+                    <h3>Uísque Tradicional</h3>
+                    <p>Garrafa 1 litro</p>
+                    <p class="preco">R$ 55,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="images/uisque.svg" alt="Ilustração de uma garrafa de uísque">
+                    <h3>Uísque Envelhecido</h3>
+                    <p>Garrafa 750 ml</p>
+                    <p class="preco">R$ 85,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="images/uisque.svg" alt="Ilustração de uma garrafa de uísque">
+                    <h3>Uísque Escocês</h3>
+                    <p>Garrafa 750 ml</p>
+                    <p class="preco">R$ 120,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="card">
+                    <img class="imagem-produto" src="images/uisque.svg" alt="Ilustração de uma garrafa de uísque">
+                    <h3>Uísque Bourbon</h3>
+                    <p>Garrafa 750 ml</p>
+                    <p class="preco">R$ 95,00</p>
+                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>E-Bar Bebidas - Obrigado pela visita!</p>
+    </footer>
 </body>
 </html>
