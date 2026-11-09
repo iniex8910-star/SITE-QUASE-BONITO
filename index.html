@@ -17,15 +17,17 @@
             <button type="submit">Buscar</button>
         </form>
         <div class="acoes-header">
-            <button class="carrinho-header" type="button">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M3 4h2l2.2 11h10.9l2-8H6"></path>
-                    <circle cx="9" cy="19" r="1"></circle>
-                    <circle cx="17" cy="19" r="1"></circle>
-                </svg>
-                Carrinho
-            </button>
-            <a class="login" href="pages/login.html" aria-label="Entrar na sua conta">
+            <form action="pages/carrinho.html">
+                <button class="carrinho-header" type="submit">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 4h2l2.2 11h10.9l2-8H6"></path>
+                        <circle cx="9" cy="19" r="1"></circle>
+                        <circle cx="17" cy="19" r="1"></circle>
+                    </svg>
+                    Carrinho
+                </button>
+            </form>
+            <a class="login" href="pages/contaDoUsuario.html" aria-label="Minha conta">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                     <circle cx="12" cy="8" r="4"></circle>
                     <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path>
@@ -39,25 +41,34 @@
             <h2>Refrigerantes</h2>
             <div class="cards">
                 <article class="card">
-                    <img class="imagem-produto"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aG8r8bG-9Ch4--OyWuEMsylim6zKgIGi9x7AABjucg&s=10" alt="coca cola">
+                    <img class="imagem-produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0aG8r8bG-9Ch4--OyWuEMsylim6zKgIGi9x7AABjucg&s=10" alt="coca cola">
                     <h3>Refrigerante Coca cola</h3>
                     <p>Garrafa 2 litros</p>
                     <p class="preco">R$ 10,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-1">Quantidade</label>
+                    <input type="number" id="qtd-1" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="1" data-nome="Refrigerante Coca-Cola" data-preco="10.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpHZvo5zEQMRXv9-RF8qJhnfTo5aX7Br0v9L0zCMO3Pw&s=10" alt="Ilustração de uma garrafa de refrigerante">
                     <h3>Guaraná</h3>
                     <p>Garrafa 2 litros</p>
                     <p class="preco">R$ 9,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-2">Quantidade</label>
+                    <input type="number" id="qtd-2" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="2" data-nome="Guaraná" data-preco="9.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFV8Y8fDjqzhM0o1Sg8yk8HdkK_zO4_VPJ30XnV8ZA8A&s=10" alt="Ilustração de uma garrafa de refrigerante">
                     <h3>Refrigerante Fanta</h3>
                     <p>Garrafa 2 litros</p>
                     <p class="preco">R$ 9,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-3">Quantidade</label>
+                    <input type="number" id="qtd-3" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="3" data-nome="Refrigerante Fanta" data-preco="9.00">Adicionar ao carrinho</button>
                 </article>
             </div>
         </section>
@@ -70,28 +81,40 @@
                     <h3>Heineken Long Neck 0% Alcool</h3>
                     <p>Garrafa 330ml</p>
                     <p class="preco">R$ 7,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-4">Quantidade</label>
+                    <input type="number" id="qtd-4" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="4" data-nome="Heineken Long Neck 0% Álcool" data-preco="7.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrjDpU7OfcBo1jHRrxbZE9gASm9nE-HEiQnGIO0TEZAg&s=10" alt="Ilustração de bebida sem álcool">
                     <h3>Cerveja Brahma 0% Alcool lata</h3>
                     <p>Garrafa 350 ml</p>
                     <p class="preco">R$ 5,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-5">Quantidade</label>
+                    <input type="number" id="qtd-5" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="5" data-nome="Cerveja Brahma 0% Álcool lata" data-preco="5.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYaoQASp1JJvzrPy-8YxyNCbcyMg5ckuQwiem88flzwA&s=10" alt="Ilustração de bebida sem álcool">
                     <h3>Cerveja Itaipava 0 alcool</h3>
                     <p>Garrafa 350ml</p>
                     <p class="preco">R$ 6,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-6">Quantidade</label>
+                    <input type="number" id="qtd-6" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="6" data-nome="Cerveja Itaipava 0% Álcool" data-preco="6.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://mambodelivery.vtexassets.com/arquivos/ids/221592/281589-Cerveja-Zero-Alcool-Sol-330ml.jpg?v=638639932831630000" alt="Ilustração de bebida sem álcool">
                     <h3>Cerveja sem alcool Sol</h3>
                     <p>Caixa 330ml</p>
                     <p class="preco">R$ 8,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-7">Quantidade</label>
+                    <input type="number" id="qtd-7" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="7" data-nome="Cerveja sem álcool Sol" data-preco="8.00">Adicionar ao carrinho</button>
                 </article>
             </div>
         </section>
@@ -104,28 +127,40 @@
                     <h3>Cerveja Original</h3>
                     <p>600ml a garrafa</p>
                     <p class="preco">R$ 8,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-8">Quantidade</label>
+                    <input type="number" id="qtd-8" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="8" data-nome="Cerveja Original" data-preco="8.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://swiftbr.vteximg.com.br/arquivos/ids/219277/620803-cerveja-heineken-long-neck_rec.jpg?v=639234607858730000" alt="Ilustração de bebida alcoólica">
                     <h3>cerveja Heineken Long Neck</h3>
                     <p>Garrafa 330 ml</p>
                     <p class="preco">R$ 32,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-9">Quantidade</label>
+                    <input type="number" id="qtd-9" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="9" data-nome="Cerveja Heineken Long Neck" data-preco="32.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjC2T-6V5KvyYBwTzMEdU-v2uZfbE2l16BpqICbCpsrA&s=10" alt="Ilustração de bebida alcoólica">
                     <h3>Heineken lata</h3>
                     <p>Garrafa 350 ml</p>
                     <p class="preco">R$ 45,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-10">Quantidade</label>
+                    <input type="number" id="qtd-10" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="10" data-nome="Heineken lata" data-preco="45.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4jkBb3eiCQAN7q5TBI0IUOaSYSyEGpDz0W38915OpS9vx9cVBC2B_Utc&s=10" alt="Ilustração de bebida alcoólica">
                     <h3>Berry Gin Sour </h3>
                     <p>Garrafa 1 litro</p>
                     <p class="preco">R$ 60,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-11">Quantidade</label>
+                    <input type="number" id="qtd-11" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="11" data-nome="Berry Gin Sour" data-preco="60.00">Adicionar ao carrinho</button>
                 </article>
             </div>
         </section>
@@ -138,35 +173,130 @@
                     <h3>Uísque RED LABEL</h3>
                     <p>Garrafa 1 litro</p>
                     <p class="preco">R$ 55,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-12">Quantidade</label>
+                    <input type="number" id="qtd-12" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="12" data-nome="Uísque Red Label" data-preco="55.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEuvQOCSmZ0uCKMMNmJBjSq39hVOC4bCgqP_uNuTR4zs4st329wwwYSDqC&s=10" alt="Ilustração de uma garrafa de uísque">
                     <h3>Uísque JACK DANIELS</h3>
                     <p>Garrafa 750 ml</p>
                     <p class="preco">R$ 85,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-13">Quantidade</label>
+                    <input type="number" id="qtd-13" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="13" data-nome="Uísque Jack Daniel's" data-preco="85.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://s2-g1.glbimg.com/wacgdMlfE9VSQpW2AAgD9XlKH_U=/0x0:800x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/B/z/ZomwinSAeZQQXpMxtOrg/ballantines.png" alt="Ilustração de uma garrafa de uísque">
                     <h3>Uísque BALLANTINES</h3>
                     <p>Garrafa 750 ml</p>
                     <p class="preco">R$ 120,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-14">Quantidade</label>
+                    <input type="number" id="qtd-14" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="14" data-nome="Uísque Ballantine's" data-preco="120.00">Adicionar ao carrinho</button>
                 </article>
                 <article class="card">
                     <img class="imagem-produto" src="https://www.casadabebida.com.br/img/products/27/002.webp" alt="Ilustração de uma garrafa de uísque">
                     <h3>Uísque escoces white horse</h3>
                     <p>Garrafa 1l</p>
                     <p class="preco">R$ 95,00</p>
-                    <button class="botao-carrinho" type="button">Adicionar ao carrinho</button>
+                    <label for="qtd-15">Quantidade</label>
+                    <input type="number" id="qtd-15" min="1" value="1">
+                    <button class="botao-detalhes" type="button">Ver detalhes</button>
+                    <button class="botao-carrinho" type="button" data-id="15" data-nome="Uísque escocês White Horse" data-preco="95.00">Adicionar ao carrinho</button>
                 </article>
             </div>
         </section>
+
+        <p class="sem-resultados" hidden>Nenhuma bebida encontrada.</p>
     </main>
+
+    <dialog class="detalhes-produto" aria-labelledby="titulo-detalhes">
+        <div class="cabecalho-detalhes">
+            <h2 id="titulo-detalhes"></h2>
+            <button class="fechar-detalhes" type="button" aria-label="Fechar detalhes">&times;</button>
+        </div>
+        <div class="conteudo-detalhes">
+            <img class="imagem-detalhes" src="" alt="">
+            <div>
+                <p class="preco preco-detalhes"></p>
+                <p><strong>Embalagem:</strong> <span class="embalagem-detalhes"></span></p>
+                <p><strong>Descrição:</strong> ...</p>
+                <p><strong>Informações adicionais:</strong> ...</p>
+            </div>
+        </div>
+    </dialog>
 
     <footer>
         <p>E-Bar Bebidas - Obrigado pela visita!</p>
     </footer>
+
+    <script src="js/adicionar.js"></script>
+    <script>
+        const janelaDetalhes = document.querySelector(".detalhes-produto");
+
+        document.querySelectorAll(".botao-detalhes").forEach((botao) => {
+            botao.addEventListener("click", () => {
+                const cartao = botao.closest(".card");
+                const imagem = cartao.querySelector(".imagem-produto");
+
+                janelaDetalhes.querySelector("#titulo-detalhes").textContent =
+                    cartao.querySelector("h3").textContent.trim();
+                janelaDetalhes.querySelector(".imagem-detalhes").src = imagem.src;
+                janelaDetalhes.querySelector(".imagem-detalhes").alt = imagem.alt;
+                janelaDetalhes.querySelector(".preco-detalhes").textContent =
+                    cartao.querySelector(".preco").textContent;
+                janelaDetalhes.querySelector(".embalagem-detalhes").textContent =
+                    cartao.querySelector("h3 + p").textContent;
+
+                janelaDetalhes.showModal();
+            });
+        });
+
+        janelaDetalhes.querySelector(".fechar-detalhes").addEventListener("click", () => {
+            janelaDetalhes.close();
+        });
+
+        const formBusca = document.querySelector(".pesquisa");
+        const campoBusca = document.querySelector(".pesquisa input");
+        const semResultados = document.querySelector(".sem-resultados");
+
+        // tira maiúsculas e acentos para comparar
+        function normalizar(texto) {
+            return texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
+
+        function filtrar() {
+            const termo = normalizar(campoBusca.value.trim());
+            let achouAlgum = false;
+
+            document.querySelectorAll(".categoria").forEach((categoria) => {
+                let visiveis = 0;
+
+                categoria.querySelectorAll(".card").forEach((cartao) => {
+                    const nome = normalizar(cartao.querySelector("h3").textContent);
+                    const mostrar = nome.includes(termo);
+
+                    cartao.hidden = !mostrar;
+                    if (mostrar) visiveis++;
+                });
+
+                categoria.hidden = visiveis === 0;
+                if (visiveis > 0) achouAlgum = true;
+            });
+
+            semResultados.hidden = achouAlgum;
+        }
+
+        campoBusca.addEventListener("input", filtrar);
+
+        formBusca.addEventListener("submit", (event) => {
+            event.preventDefault();
+            filtrar();
+        });
+    </script>
 </body>
 </html>
